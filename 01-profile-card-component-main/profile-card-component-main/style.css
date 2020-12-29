@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    text-decoration: none;
+    box-sizing:border-box;
+    list-style: none;
+}
+
+body{
+    background-color:hsl(185, 75%, 39%);
+    width:1440px;
+    height:100vh;
+    margin:0 auto;
+    font-size:18px;
+    line-height:1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#main-wrapper{
+ 
+    width:1440px;
+    height:100vh;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    z-index: 1;
+}
+
+.circle1{
+    bottom: 40%;
+    right:50%;
+    border:0;
+    background: linear-gradient(185deg, rgb(89, 208, 221) 0%,hsl(185, 75%, 39%) 97%);
+}
+
+.circle2{
+    top:50%;
+    left:50%;
+    background: linear-gradient(-60deg, rgb(89, 208, 221) 40%,hsl(185, 76%, 39%) 100%);
+}
+
+#card-container{
+    width:400px;
+    height:400px;
+    z-index: 2;
+    border-radius:20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.418);
+    position:relative;
+}
+
+#banner{
+    height:150px;
+    width:100%;
+    background:url(images/bg-pattern-card.svg);
+    background-size:400px 150px;
+    z-index: 2;
+    
+}
+
+#content{
+    height:250px;
+    width:100%;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    z-index:2;
+   
+}
+
+.victor{
+    width:100px;
+    height:100px;
+    border:5px solid #fff;
+    border-radius: 50%;
+    position:absolute;
+    top:25%;
+    left:37%;
+    z-index:3;
+}
+
+#info{
+    flex-grow:1;
+    margin-top:70px;
+    line-height:2rem;
+    z-index:2;
+}
+
+.bold{
+    font-weight:700;
+    font-size:18px;
+}
+.small{
+    font-size:.725rem;
+    letter-spacing:0.1rem;
+    font-weight:400;
+}
+.gray{
+    color: hsl(0, 0%, 59%);
+}
+
+span{
+    font-weight:400;
+    margin-left:10px; 
+}
+
+p{
+    font-weight:400;
+    font-size:16px;
+}
+
+#footer{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.418);
+    display:flex;
+    justify-content: space-evenly;
+    padding:20px 0px;
+}
+
+/* TODO: ADD MEDIA QUERIES */
